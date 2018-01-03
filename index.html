@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Regexui | Regex Made Easy</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="./images/regexui.png">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans+Mono" rel="stylesheet">
+
+	<!-- Bootstrap CSS -->
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- highlight-within-textarea CSS -->
+	<link href="./css/jquery.highlight-within-textarea.css" rel="stylesheet">
+
+	<!-- Regexui CSS -->
+	<link href="./css/regexui.css" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-11">
+				<div class="row bg-dark text-light pt-1 pb-1 sticky-top">
+					<div class="col-1 pt-1">
+						<a href="#">
+							<img src="./images/regexui.png" width="30" height="30" alt="">
+						</a>
+					</div>
+					<div class="col-10">
+						<div class="row">
+							<div class="col-2 d-flex align-items-center">
+								Find all the
+							</div>
+							<div class="col-2 d-flex align-items-center pt-1 pb-1">
+								<select class="form-control" id="search-main-type">
+									<option value="WORDS">words</option>
+									<option value="SENTENCES">sentences</option>
+								</select>
+							</div>
+							<div class="col d-flex flex-column" id="search-column">
+								<div class="row flex-row pt-1 pb-1" id="search-row-0">
+									<div class="col-1 d-flex align-items-center" id="search-row-text-0">
+										that
+									</div>
+									<div class="col-4">
+										<select class="form-control search-type" id="search-type-0">
+											<option value="CONTAIN">contain</option>
+											<option value="START_WITH">start with</option>
+											<option value="END_WITH">end with</option>
+										</select>
+									</div>
+									<div class="col">
+										<input class="form-control search-text" type="text" id="search-text-0" placeholder="this">
+									</div>
+									<div class="col-1">
+										<button class="btn remove-button" id="remove-button-0">
+											<img id="remove-icon-0" src="./images/x.svg" />
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-1 d-flex align-items-end justify-content-end pb-1">
+						<button class="btn" id="expand-button">
+							<img src="./images/plus.svg" />
+						</button>
+					</div>
+				</div>
+				<div class="row">
+					<textarea class="form-control" id="editor"
+					placeholder="Paste your text here. (CTRL + V)"></textarea>
+				</div>
+			</div>
+			<div class="col-1">
+				<div class="row pt-1 pl-1">
+					<button class="btn" id="collapse-button" status="visible">
+						<img src="./images/fold.svg" />
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Jquery JS -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Bootstrap JS -->
+	<script src="./js/bootstrap.min.js"></script>
+
+	<!-- highlight-within-textarea JS -->
+	<script src="./js/jquery.highlight-within-textarea.js"></script>
+
+	<!-- RegexUI JS -->
+	<script src="./js/regexui.js"></script>
+</body>
+</html>

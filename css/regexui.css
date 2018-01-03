@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 18px/1.4 'Open Sans', sans-serif;
+  color: #495057;
+  background-color: #f1f3f5;
+}
+
+/*
+a {
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #f8f9fa;
+  background-color: #495057;
+  text-decoration: none;
+}*/
+
+section {
+  margin-top: 60px;
+}
+
+code {
+  padding: 0 5px;
+  font-family: 'Droid Sans Mono', sans-serif;
+  font-size: 16px;
+  background-color: #dee2e6;
+}
+
+.hwt-container {
+  background-color: #f8f9fa;
+  width: 100%;
+}
+
+.hwt-content {
+  width: 100%;
+  height: 80vh;
+  padding: 20px;
+  border: 1px solid #adb5bd;
+  color: inherit;
+  font: 18px/25px 'Droid Sans Mono', sans-serif;
+}
+
+.hwt-input:focus {
+  outline-color: #495057;
+}
+
+.hwt-content mark {
+  border-radius: 3px;
+  background-color: #d0bfff;
+}
+
+.hwt-content mark.red {
+  background-color: #ffc9c9;
+}
+
+.hwt-content mark.blue {
+  background-color: #a3daff;
+}
+
+.hwt-content mark.yellow {
+  background-color: #ffec99;
+}
